@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="responsive">
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-dark shadow-sm pb-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="../images/logo.png" alt="Logo" style="max-height: 2rem; margin-right: 10px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <!-- Search text field -->
+                    <form class="form-inline my-2 my-lg-0 mx-auto col-xl-4 col-sm-12 col-md-4">
+                        <input class="form-control mr-sm-2 rounded-5" type="search" placeholder="Vyhľadávanie"
+                            aria-label="Search" />
+                    </form>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Kategórie
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        Category 1
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        Category 2
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        Category 3
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        Category 4
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        Category 5
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Košík</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">Prihlasovanie</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <main class="py-4 mx-auto">
+                    <!-- Checkout steps -->
+                    <section class="container-fluid my-3">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="checkout-step active">1</div>
+                                    <div class="checkout-line active"></div>
+                                    <div class="checkout-step active">2</div>
+                                    <div class="checkout-line"></div>
+                                    <div class="checkout-step">3</div>
+                                    <div class="checkout-line"></div>
+                                    <div class="checkout-step">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Shipping -->
+                    <section class="container-fluid my-3">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <form id="shipping-form" class="form shadow rounded" method="post">
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input class="rounded-5" type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input class="rounded-5" type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone:</label>
+                                        <input class="rounded-5" type="tel" id="phone" name="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country">Country:</label>
+                                        <select class="rounded-5" id="country" name="country" required>
+                                            <option value="">Select a country</option>
+                                            <option value="Slovakia">Slovakia</option>
+                                            <option value="Japan">Japan</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <label for="city">City:</label>
+                                                <input class="rounded-5" type="text" id="city" name="city" required>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="post_code">Post Code:</label>
+                                                <input class="rounded-5" type="text" id="post_code" name="post_code" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <label for="street_name">Street Name:</label>
+                                                <input class="rounded-5" type="text" id="street_name" name="street_name" required>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="street_number">Street Number:</label>
+                                                <input class="rounded-5" type="text" id="street_number" name="street_number" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <label for="shipping_provider">Choose a shipping provider:</label><br>
+                                        <input type="radio" id="provider1" name="shipping_provider" value="Provider 1"
+                                            checked>
+                                        <label for="provider1">Provider 1</label>
+                                        <input type="radio" id="provider2" name="shipping_provider" value="Provider 2">
+                                        <label for="provider2">Provider 2</label>
+                                        <input type="radio" id="provider3" name="shipping_provider" value="Provider 3">
+                                        <label for="provider3">Provider 3</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Order navigation -->
+                    <section class="container-fluid my-3">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="/cart" class="btn btn-primary">Back</a>
+                                    <button type="submit" form="shipping-form" class="btn btn-primary">Confirm
+                                        Shipping</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-sm-12 mb-4 mb-md-0 text-center">
+                        <h4>Column 1</h4>
+                        <p>Column 1 content goes here.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-4 mb-md-0 text-center">
+                        <h4>Column 2</h4>
+                        <p>Column 2 content goes here.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <h4>Column 3</h4>
+                        <p>Column 3 content goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
