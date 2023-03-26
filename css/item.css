@@ -1,0 +1,22 @@
+p.item {
+    margin: 0;
+}
+
+hr.item {
+    margin: 0.25rem;
+}
+
+.list-of-params {
+    margin-top: 3rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.p-left {
+    margin: 0 0 0 1rem;
+}
+
+.span-right {
+    margin: 0 1rem 0 0;
+}
+
