@@ -22,11 +22,11 @@ Dávid Varinský
 
 ### Pôvodný model
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled.png)
+![Untitled](doc_images/Untitled.png)
 
 ### Aktuálny model
 
-![admin_menu.png](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/admin_menu.png)
+![admin_menu.png](doc_images/admin_menu.png)
 
 ### Zmeny oproti pôvodnému návrhu
 
@@ -491,36 +491,36 @@ function fetchFilteredAndSortedItems(checkedValues, sortValue) {
 
 ### Navigačný panel
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled%201.png)
+![Untitled](doc_images/Untitled%201.png)
 
 ### Katalóg produktov
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled%202.png)
+![Untitled](doc_images/Untitled%202.png)
 
 ### Košík
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled%203.png)
+![Untitled](doc_images/Untitled%203.png)
 
 ### Admin panel
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled%204.png)
+![Untitled](doc_images/Untitled%204.png)
 
 ### Detail produktu
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled%205.png)
+![Untitled](doc_images/Untitled%205.png)
 
 ### Prihlásenie
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled%206.png)
+![Untitled](doc_images/Untitled%206.png)
 
 ### Homepage
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled%207.png)
+![Untitled](doc_images/Untitled%207.png)
 
 ### Pridávanie kategórií
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled%208.png)
+![Untitled](doc_images/Untitled%208.png)
 
 ### Footer
 
-![Untitled](SILVER%20BULLET-%20SEMESTRA%CC%81LNY%20PROJEKT%20WTECH%202f896d0b2903484bb05b800ecfaa2c73/Untitled%209.png)
+![Untitled](doc_images/Untitled%209.png)
