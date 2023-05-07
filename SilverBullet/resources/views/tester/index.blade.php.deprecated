@@ -1,0 +1,40 @@
+@extends('layouts.app')
+
+@section('content')
+    //Get the item id from an input field and clean up the design
+    <input type="text" id="item_id" value="1">
+    <button onclick="addToCart(document.getElementById('item_id').value)">Add to cart</button>
+
+    <script>
+        function addToCart(itemId) {
+            const url = '/cart/add';
+            const data = {
+                item_id: itemId,
+                quantity: 1
+            };
+
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+            const headers = new Headers();
+            headers.append('X-CSRF-TOKEN', csrfToken);
+            headers.append('Content-Type', 'application/json');
+            headers.append('Accept', 'application/json');
+
+            fetch(url, {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        console.log('Item added to cart');
+                        } else {
+                        console.error('Error adding item to cart');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
+@endsection
