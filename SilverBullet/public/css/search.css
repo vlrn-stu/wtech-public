@@ -1,0 +1,9 @@
+.card-link {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-link:hover .overlay {
+    background-color: rgba(0,0,0,.5);
+  }

@@ -1,0 +1,91 @@
+main {
+    max-width: 1200px;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    flex: 1;
+    background-color: #fff;
+}
+
+
+.bg-gray {
+    background-color: #D9D9D9
+}
+
+.overlay {
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #5B495B;
+}
+
+.image-container:hover .overlay {
+    opacity: 69%;
+}
+
+button.accordion-button:not(.collapsed) {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+button.accordion-button:focus {
+    box-shadow: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #241724;
+    color: #fff;
+}
+
+.nav-link:hover,
+
+.nav-link:active {
+    color: #F5EC13;
+}
+
+.footer {
+    background-color: #241724;
+    padding: 20px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.rounded-top-5 {
+    border-radius: 2rem 2rem 0 0 !important;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, .55)
+}
+
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* 16:9 aspect ratio */
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
